@@ -1,0 +1,261 @@
+
+
+
+
+from easygui import *
+import sys
+while 1:
+    msgbox("online shopping")
+    msg ="choose ypur site"
+    title = "shop online"
+    choices = ["amazon", "filpkart","snapdeal"]
+    choice = choicebox(msg, title, choices)
+   # msgbox("You chose: " + str(choice), "shopping")
+    if choice=="amazon":
+       msgbox("amazon shopping")
+       msg ="what type of shops do you want to shop"
+       title1 = "amazon shop"
+       choices1 = ["electronics", "toys"]
+       choice1 = choicebox(msg, title1, choices1)
+      # msgbox("You chose: " +str(choice1),"amazon")
+       if choice1=="electronics" :
+           msgbox("electronics")
+           msg ="what type of elctronic do you want to shop"
+           title3 = "amazon shop"
+           choices2 = ["mobiles","laptop"]
+           choice2 = choicebox(msg, title3, choices2)
+          # msgbox("You chose: " +str(choice2),"elctronic sale") 
+           if choice2=="mobiles":
+               msgbox("mobiles")
+               msg ="which mobile do you want"
+               title4= "amazon mobile shop"
+               choices3 = ["MI", "samsung"]
+               choice3 = choicebox(msg, title4, choices3)
+              # msgbox("You chose: " +str(choice3),"phone sale") 
+               if choice3=="MI":
+                  msgbox("mobiles")
+                  msg ="which MI phone do you want"
+                  title5= "amazon mobile shop"
+                  choices4 = ["pocof1", "note pro"]
+                  choice4 = choicebox(msg, title5, choices4)
+                 # msgbox("You chose: " +str(choice4),"MI sale")
+                  if choice4=="pocof1":
+                     msgbox("mobiles")
+                     msg ="which vender do you want"
+                     title6= "amazon mobile shop"
+                     choices5 = ["lotus elex=21000", "empress elex=21100"]
+                     choice5 = choicebox(msg, title6, choices5)
+                    # msgbox("You chose: " +str(choice5),"MI poco sale")
+                  else:
+                     msgbox("mobiles")
+                     msg ="which vender do you want"
+                     title6= "amazon mobile shop"
+                     choices5 = ["lotus elex=15000", "empress elex=15100"]
+                     choice5 = choicebox(msg, title6, choices5)
+                    # msgbox("You chose: " +str(choice5),"MI note pro sale")
+
+               else :
+                  msgbox("mobiles")
+                  msg ="which samsung phone do you want"
+                  title5= "amazon mobile shop"
+                  choices4 = ["A6", "A8"]
+                  choice4 = choicebox(msg, title5, choices4)
+                 # msgbox("You chose: " +str(choice4),"samsung sale")
+                  if  choice4=="A6":
+                     msgbox("mobiles")
+                     msg ="which vender do you want"
+                     title6= "amazon mobile shop"
+                     choices5 = ["lotus elex=20000", "empress elex=20100"]
+                     choice5 = choicebox(msg, title6, choices5)
+                    # msgbox("You chose: " +str(choice5),"samsung a8 sale")
+                  else:
+                     msgbox("mobiles")
+                     msg ="which vender do you want"
+                     title6= "amazon mobile shop"
+                     choices5 = ["lotus elex=21000", "empress elex=20100"]
+                     choice5 = choicebox(msg, title6, choices5)
+                    # msgbox("You chose: " +str(choice5),"samsung a6 sale")
+           else:
+               msgbox("laptop")
+               msg ="which laptop do you want"
+               title4= "amazon laptop shop"
+               choices3 = ["lenovo", "hp"]
+               choice3 = choicebox(msg, title4, choices3)
+              # msgbox("You chose: " +str(choice3),"lapii sale")  
+               if  choice3=="lenovo":
+                    msgbox("laptop")
+                    msg ="which laptop do you want"
+                    title5= "amazon laptop shop"
+                    choices4 = ["s6 yoga", "s6 run"]
+                    choice4 = choicebox(msg, title5, choices4)
+                   # msgbox("You chose: " +str(choice4),"lenovo sale")
+                    if  choice4=="s6 yoga":
+                      msgbox("lenovo")
+                      msg ="which vender do you want"
+                      title6= "amazon laptop shop"
+                      choices5 = ["v1=50000", "v2=55000"]
+                      choice5 = choicebox(msg, title6, choices5)
+                     # msgbox("You chose: " +str(choice5),"lenovo sale") 
+                    else :
+                      msgbox("lenovo")
+                      msg ="which vender do you want"
+                      title6= "amazon laptop shop"
+                      choices5 = ["v1=60000", "v2=55000"]
+                      choice5 = choicebox(msg, title6, choices5)
+                     # msgbox("You chose: " +str(choice5),"lenovo sale")
+               if  choice4=="hp":
+                   msgbox("laptop")
+                   msg ="which hp laptop do you want"
+                   title5= "amazon laptop shop"
+                   choices4 = ["h6 yoga", "h8 run"]
+                   choice4 = choicebox(msg, title5, choices4)
+                   #msgbox("You chose: " +str(choice4),"hp sale")
+                   if  choice4=="h6 yoga":
+                      msgbox("hp")
+                      msg ="which hp laptop do you want"
+                      title6= "amazon laptop shop"
+                      choices5 = ["v1=22,400", "v2=20,300"]
+                      choice5 = choicebox(msg, title6, choices5)
+                     # msgbox("You chose: " +str(choice5),"hp sale")
+                   else :
+                      msgbox("hp")
+                      msg ="which vender do you want"
+                      title6= "amazon laptop shop"
+                      choices5 = ["v1=60000", "v2=55000"]
+                      choice5 = choicebox(msg, title6, choices5)
+                     # msgbox("You chose: " +str(choice5),"hp sale")
+       else :
+           msgbox("toys")
+           msg ="what type of toys do you want to shop"
+           title3 = "amazon shop"
+           choices2 = ["bikes","rc CAR"]
+           choice2 = choicebox(msg, title3, choices2)
+          # msgbox("You chose: " +str(choice2),"elctronic sale") 
+           if choice2=="bikes":
+               msgbox("mobiles")
+               msg ="which bike toy do you want"
+               title4= "amazon toy shop"
+               choices3 = ["v1=2400", "v2=2300"]
+               choice3 = choicebox(msg, title4, choices3)
+              # msgbox("You chose: " +str(choice3),"toys sale") 
+           else:
+               msgbox("rc cars")
+               msg ="which RC CAR toy do you want"
+               title4= "amazon toy shop"
+               choices3 = ["v1=4400", "v2=6300"]
+               choice3 = choicebox(msg, title4, choices3)
+              # msgbox("You chose: " +str(choice3),"toys sale") 
+
+    elif choice=="flipkart":
+       msgbox("flipkart shopping")
+       msg ="what type of shops do you want to shop"
+       title1 = "amazon shop"
+       choices1 = ["electronics", "toys"]
+       choice1 = choicebox(msg, title1, choices1)
+      # msgbox("You chose: " +str(choice1),"amazon")
+       if choice1=="electronics" :
+           msgbox("electronics")
+           msg ="what type of elctronic do you want to shop"
+           title3 = "flipkart shop"
+           choices2 = ["mobiles","laptop"]
+           choice2 = choicebox(msg, title3, choices2)
+          # msgbox("You chose: " +str(choice2),"elctronic sale") 
+           if choice2=="mobiles":
+               msgbox("mobiles")
+               msg ="which mobile do you want"
+               title4= "flipkart mobile shop"
+               choices3 = ["MI", "samsung"]
+               choice3 = choicebox(msg, title4, choices3)
+              # msgbox("You chose: " +str(choice3),"phone sale") 
+               if choice3=="MI":
+                  msgbox("mobiles")
+                  msg ="which MI phone do you want"
+                  title5= "flipkart mobile shop"
+                  choices4 = ["pocof1", "note pro"]
+                  choice4 = choicebox(msg, title5, choices4)
+                 # msgbox("You chose: " +str(choice4),"MI sale")
+                  if choice4=="pocof1":
+                     msgbox("mobiles")
+                     msg ="which vender do you want"
+                     title6= "flipkart mobile shop"
+                     choices5 = ["lotus elex=21000", "empress elex=21100"]
+                     choice5 = choicebox(msg, title6, choices5)
+                    # msgbox("You chose: " +str(choice5),"MI poco sale")
+                  else:
+                     msgbox("mobiles")
+                     msg ="which vender do you want"
+                     title6= "flipkart mobile shop"
+                     choices5 = ["lotus elex=15000", "empress elex=15100"]
+                     choice5 = choicebox(msg, title6, choices5)
+                    # msgbox("You chose: " +str(choice5),"MI note pro sale")
+
+               else :
+                  msgbox("mobiles")
+                  msg ="which samsung phone do you want"
+                  title5= "flipkart mobile shop"
+                  choices4 = ["A6", "A8"]
+                  choice4 = choicebox(msg, title5, choices4)
+                 # msgbox("You chose: " +str(choice4),"samsung sale")
+                  if  choice4=="A6":
+                     msgbox("mobiles")
+                     msg ="which vender do you want"
+                     title6= "flipkart mobile shop"
+                     choices5 = ["lotus elex=20000", "empress elex=20100"]
+                     choice5 = choicebox(msg, title6, choices5)
+                    # msgbox("You chose: " +str(choice5),"samsung a8 sale")
+                  else:
+                     msgbox("mobiles")
+                     msg ="which vender do you want"
+                     title6= "flipkart mobile shop"
+                     choices5 = ["lotus elex=21000", "empress elex=20100"]
+                     choice5 = choicebox(msg, title6, choices5)
+                    # msgbox("You chose: " +str(choice5),"samsung a6 sale")
+           else:
+               msgbox("laptop")
+               msg ="which laptop do you want"
+               title4= "flipkart laptop shop"
+               choices3 = ["lenovo", "hp"]
+               choice3 = choicebox(msg, title4, choices3)
+              # msgbox("You chose: " +str(choice3),"lapii sale")  
+               if  choice3=="lenovo":
+                    msgbox("laptop")
+                    msg ="which laptop do you want"
+                    title5= "flipkart laptop shop"
+                    choices4 = ["s6 yoga", "s6 run"]
+                    choice4 = choicebox(msg, title5, choices4)
+                   # msgbox("You chose: " +str(choice4),"lenovo sale")
+                    if  choice4=="s6 yoga":
+                      msgbox("lenovo")
+                      msg ="which vender do you want"
+                      title6= "flipkart laptop shop"
+                      choices5 = ["v1=50000", "v2=55000"]
+                      choice5 = choicebox(msg, title6, choices5)
+                     # msgbox("You chose: " +str(choice5),"lenovo sale") 
+                    else :
+                      msgbox("lenovo")
+                      msg ="which vender do you want"
+                      title6= "flipkat laptop shop"
+                      choices5 = ["v1=60000", "v2=55000"]
+                      choice5 = choicebox(msg, title6, choices5)
+                     # msgbox("You chose: " +str(choice5),"lenovo sale")
+               if  choice4=="hp":
+                   msgbox("laptop")
+                   msg ="which hp laptop do you want"
+                   title5= "flipkart laptop shop"
+                   choices4 = ["h6 yoga", "h8 run"]
+                   choice4 = choicebox(msg, title5, choices4)
+                  # msgbox("You chose: " +str(choice4),"hp sale")
+                   if  choice4=="h6 yoga":
+                      msgbox("hp")
+                      msg ="which hp laptop do you want"
+                      title6= "fiplkart laptop shop"
+                      choices5 = ["v1=22,400", "v2=20,300"]
+                      choice5 = choicebox(msg, title6, choices5)
+                     # msgbox("You chose: " +str(choice5),"hp sale")
+                   else :
+                      msgbox("hp")
+                      msg ="which vender do you want"
+                      title6= "filpkart laptop shop"
+                      choices5 = ["v1=60000", "v2=55000"]
+                      choice5 = choicebox(msg, title6, choices5)
+                     # msgbox("You chose:
